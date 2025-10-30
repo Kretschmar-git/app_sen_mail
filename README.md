@@ -25,12 +25,12 @@ O projeto foi organizado para garantir maior segurança, separando os arquivos p
 
 ├── app_send_mail/                       # <---------------------------- Diretório PRIVADO (fora do alcance do servidor web)<br>
 │   ├── bibliotecas/<br>
-│   │   └── PHPMailer/                   # <---------------------------- Arquivos da biblioteca PHPMailer<br>
-│   └── processa_envio.php               # <---------------------------- Lógica principal: classe, config. SMTP e envio<br>
+│   │   └── PHPMailer/                   # <-------------------------- Arquivos da biblioteca PHPMailer<br>
+│   └── processa_envio.php               # <----------------------- Lógica principal: classe, config. SMTP e envio<br>
 │<br>
 ├── public_html/                         # <---------------------------- Diretório PÚBLICO (raiz do seu site)<br>
 │   ├── index.html                       # <---------------------------- Formulário de envio (Interface do usuário)<br>
-│   ├── processa_envio.php               # <---------------------------- Ponte que inclui a lógica privada<br>
+│   ├── processa_envio.php               # <--------------------- Ponte que inclui a lógica privada<br>
 │   └── logo.png                         # <---------------------------- Imagem do logo<br>
 
 
