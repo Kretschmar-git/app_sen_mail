@@ -30,7 +30,7 @@ O projeto foi organizado para garantir maior segurança, separando os arquivos p
 │<br>
 ├── public_html/                         # <---------------------------- Diretório PÚBLICO (raiz do seu site)<br>
 │   ├── index.html                       # <---------------------------- Formulário de envio (Interface do usuário)<br>
-│   ├── processa_envio.php               # <------------------- Ponte que inclui a lógica privada<br>
+│   ├── processa_envio.php               # <------------------ Ponte que inclui a lógica privada<br>
 │   └── logo.png                         # <------------------------------ Imagem do logo<br>
 
 
