@@ -22,7 +22,16 @@ Um aplicativo web simples e funcional para envio de e-mails, utilizando PHP e a 
 
 O projeto foi organizado para garantir maior segurança, separando os arquivos públicos dos arquivos de lógica interna.
 
------------------------
+/
+├── app_send_mail/           # <-- Diretório PRIVADO (fora do alcance do servidor web)
+│   ├── bibliotecas/
+│   │   └── PHPMailer/       # <-- Arquivos da biblioteca PHPMailer
+│   └── processa_envio.php   # <-- Lógica principal: classe, config. SMTP e envio
+│
+├── public_html/             # <-- Diretório PÚBLICO (raiz do seu site)
+│   ├── index.html           # <-- Formulário de envio (Interface do usuário)
+│   ├── processa_envio.php   # <-- Ponte que inclui a lógica privada
+│   └── logo.png             # <-- Imagem do logo
 
 -   **`public_html/`**: Contém os arquivos que o usuário acessa diretamente pelo navegador.
 -   **`app_send_mail/`**: Contém o "coração" da aplicação, incluindo a biblioteca PHPMailer e o script com a lógica de envio e as credenciais, que nunca deve ser acessível diretamente pela web.
