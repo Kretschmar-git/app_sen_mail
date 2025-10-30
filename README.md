@@ -1,4 +1,4 @@
-# app_sen_mail
+# app_send_mail
 App Mail Send ✉️
 Um aplicativo web simples e funcional para envio de e-mails, utilizando PHP e a biblioteca PHPMailer. O projeto demonstra boas práticas de segurança ao separar a lógica de negócio e as credenciais do diretório público.
 
