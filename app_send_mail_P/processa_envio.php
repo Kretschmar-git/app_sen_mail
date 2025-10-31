@@ -66,8 +66,8 @@
         $mail->isSMTP();                                     // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                // Set the SMTP server to send through gmail 
         $mail->SMTPAuth   = true;                            // Enable SMTP authentication
-        $mail->Username   = 'seu@gmail';  // SMTP username (seu e-mail)
-        $mail->Password   = 'suasenha';              // SMTP password (sua SENHA DE APP)
+        $mail->Username   = 'seu@gmail';  					// SMTP username (seu e-mail)
+        $mail->Password   = 'suasenha';              		// SMTP password (sua SENHA DE APP)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;     // <-- CORRIGIDO 3: Mudei para SMTPS (SSL)
         $mail->Port       = 465;                             // <usar porta 465 ou 587>
 
@@ -152,3 +152,4 @@
     </body>
 
 </html>
+
