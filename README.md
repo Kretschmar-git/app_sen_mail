@@ -25,7 +25,7 @@ O projeto foi organizado para garantir maior segurança, separando os arquivos p
 
 ```
 
-├── app_send_mail_P/                    ( Diretório PRIVADO (fora do alcance do servidor web) )
+├── app_send_mail_P/                     ( Diretório PRIVADO (fora do alcance do servidor web) )
 │   ├── bibliotecas/
 │   │   └── PHPMailer/                   ( Arquivos da biblioteca PHPMailer )
 │   └── processa_envio.php               ( Lógica principal: classe, config. SMTP e envio )
